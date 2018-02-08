@@ -1,0 +1,85 @@
+*{margin:0;padding:0;}
+/*导航*/
+.navbar-collapse{z-index:50;}
+.nav li{padding:5px 0;border-left: 1px solid #252947;border-right: 1px solid #252947;margin-left:-1px;z-index:23;background: #191d3a;}
+.nav ul:first-child{color: #e2e4ed;background-color: #252947;}
+.nav li:first-child a{color:#fff;}
+.nav li a{color: #818496}
+.navbar-right li{border:none;}
+.navbar-right li:first-child{background: #191d3a;}
+.navbar-default .navbar-right li:first-child a{color:#38b774;}
+.btn-success{display: inline-block;margin: 12px 0 0 10px;height: 32px;width: 98px;border-radius: 3px;background-color: #38b774;}
+.nav .btn-success a{font-size:14px;color: #fff;display:block;}
+#bs-example-navbar-collapse-1 li{background: #191d3a;}
+/*导航经过变色左边*/
+.navchange li:hover{background:#252947; }
+.collapse .navchange li:hover a{color:white;}
+.collapse .navchange li a:hover{color:white!important;}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color:white;
+    background-color:transparent!important;
+}
+/*导航经过变色右边*/
+.collapse .navchanger li a:hover{color:#38b774!important;}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color:#38b774;
+    background-color:transparent!important;
+}
+/*轮播图尺寸*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 0px)and (max-width:768px){
+    .carousel-inner .item img{width:100%;height:200px!important;}
+    .container .row1 .rowcol-width{width:50%;padding-left:0;padding-right:0;}
+    .row1 .thumbnail{text-align: center;border-top: 1px solid #dbe1e7;border-left: 1px solid #dbe1e7;float: left;background: #fff;width:100%;height:150px;}
+    .row1 .thumbnail span {font-size:12px;}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 768px)and (max-width:992px) {
+    .carousel-inner .item img{width:100%;height:300px!important;}
+    .container .row1 .rowcol-width{width:50%;padding-left:0;padding-right:0;}
+    .row1 .thumbnail{text-align: center;border-top: 1px solid #dbe1e7;border-left: 1px solid #dbe1e7;float: left;background: #fff;width:100%;height:157px;}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 992px){
+    .carousel-inner .item img{width:100%;height:460px!important;}
+    .container .row1 .rowcol-width{width:24%;padding-left:0;padding-right:0;}
+    .row1 .thumbnail{text-align: center;border-top: 1px solid #dbe1e7;border-left: 1px solid #dbe1e7;float: left;background: #fff;width:100%;height:182px;}
+}
+
+/*中间介绍top*/
+.intruduce{padding-bottom:27px!important;}
+.lr-left{margin-top: -21px!important;}
+.lr-top{margin-top: -15px!important;}
+span.pull-leftimg{background:url(../img/game/location.png);background-position:0 -186px;;display:block;float:left;height:29px;width:23px;}
+.middle-top-font:hover{ color:#38b774;}
+span.pull-leftfon{line-height: 32px; padding: 10px;font-size: 18px;font-weight: bold;}
+.nav li:first-child{background: none;}
+/*中间的三个图片*/
+.caption a{text-decoration: none;outline: none;color: #444866;cursor: pointer;font-size: 24px;font-weight:bold;}
+.thumbnail1,.thumbnail2,.thumbnail3{background: url(../img/service/faqicon.png) no-repeat;width: 38px; height: 68px;margin: auto;padding-right: 12px;}
+.thumbnail2{background-position: 0 -202px;width: 60px;}
+.thumbnail3{background-position: 0 -136px;}
+.row .thumbnail{background-color: #f1f1f1;}
+.row .thumbnail p{margin: 0 0 -18px;}
+.container1 h3{font-weight: normal;font-size: 1.166em;line-height: 62px;}
+.row1 .thumbnail{background: #fff;}
+.row1 .thumbnail img{margin-top:35px;}
+.row1 .thumbnail:hover{background-color: #f1f1f1;font-weight: bold;border:1px solid #ccc;}
+/*.row1 a.thumbnail:hover {border-color: transparent;}*/
+.row2{margin-bottom: 20px;}
+a.thumbnail{float:left;}
+.container .row1 .thumbnail{margin-bottom: -1px;}
+.thumbnail span{font-size:16px;margin:10px 0;display: inline-block;}
+
+/*top*/
+.scrolltop{position: fixed;right: 15px;bottom: 75px;width: 68px; height: 29px; background: url(../img/top.png) no-repeat 0 -40px;z-index: 999;}
+.scrolltop:hover{background-position: 0 0;}
+
+/*版权*/
+.container p,.container p a{    color: #6c6e7e;}
+.nav li{background:none;border:none;}
+.bottom span,a,p{font-size:12px;}
+.bottom a:hover{text-decoration: none;color:white;}

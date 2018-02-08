@@ -1,0 +1,953 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>博雅游戏</title>
+
+    <link rel="stylesheet" href="../css/game.css">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="../js/game.js"></script>
+</head>
+
+<body>
+<!--导航-->
+
+<nav class="navbar navbar-default" style="background: #191d3a;height:60px;border-radius: 0%;margin-bottom: 0px;
+   border: none;">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="../img/brand%20(1).png" style="width:160px;height:36px;"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav hidden-sm navchange">
+                <li ><a href="../index.html">首页 <span class="sr-only">(current)</span></a></li>
+                <li style="background-color: #252947; "><a href="../html/game.html" style="color: #e2e4ed;">博雅游戏</a></li>
+                <li >
+                    <a href="../html/new.html">博雅新闻 <span class="caret sr-only"></span></a>
+                </li>
+                <li><a href="../html/about.html">关于我们</a></li>
+                <li><a href="../html/about.html">客服中心</a></li>
+                <li><a href="#">投资者关系</a></li>
+                <li class="hidden-lg"><a href="#">加入我们</a></li>
+                <li class="hidden-lg"><a href="#">中文</a></li>
+                <li class="hidden-lg"><a href="#">EN</a></li>
+                <li class="hidden-sm hidden-xs"><button type="button" class="btn btn-success " style="display: inline!important;"><a href="#" style="color:white;">加入我们</a></button></li>
+            </ul>
+
+
+            <ul class="nav navbar-nav navbar-right navchanger visible-lg">
+                <li><a href="#">中文</a></li>
+                <li>
+                    <a href="#">EN</a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--大图-->
+<div class="container-fluid visible-lg" style="padding-left:0px;padding-right:0px;">
+  <img src="../img/game/gamebanner.jpg" style="width:100%;">
+</div>
+<!--中间内容介绍-->
+<div class="container">
+   <div class="page-header intruduce visible-lg">
+       <div class="pull-left lr-left">
+          <span class="pull-leftimg" ></span>
+          <span class="pull-leftfon">博雅游戏</span>
+       </div>
+       <div class="pull-right lr-top">
+          <span class=" glyphicon glyphicon-home"></span>
+          <span class="glyphicon glyphicon-play" style="font-size:10px;color:#CCC;"></span>
+          <span>博雅游戏</span>
+       </div>
+   </div>
+
+</div>
+
+<!--小屏显示-->
+<ul id="myTab" class="nav nav-tabs visible-xs visible-sm">
+    <li class="dropdown myTabz" >
+        <a href="#" id="myTabDrop1" class="dropdown-toggle"
+           data-toggle="dropdown" style="border: none;background: #F7F7F7!important;color:#38b774;">iPhone
+        </a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+            <li>
+                <a href="#tab1" tabindex="-1" data-toggle="tab">iPhone</a>
+            </li>
+
+            <li>
+                <a href="#tab2" tabindex="-1" data-toggle="tab">Android</a>
+            </li>
+
+            <li>
+                <a href="#tab3" tabindex="-1" data-toggle="tab">iPad</a>
+            </li>
+
+            <li>
+                <a href="#tab4" tabindex="-1" data-toggle="tab"> PC</a>
+            </li>
+
+            <li>
+                <a href="#tab5" tabindex="-1" data-toggle="tab"> TV </a>
+            </li>
+
+        </ul>
+    </li>
+</ul>
+<div class="container">
+    <div style="height: 100px;" >
+        <div class="col-xs-2 bq visible-lg visible-md">
+            <ul class="nav nav-tab vertical-tab tabchange " role="tablist" id="vtab">
+                <li role="presentation" >
+                    <a href="#tab1" aria-controls="home" role="tab" data-toggle="tab" class="current">
+                        <span class="left-img">
+                            <span class="newfont"> iPhone </span></span>
+                        <sapn class="caret pull-right arrows " ></sapn>
+                    </a>
+
+                </li>
+                <li role="presentation">
+                    <a href="#tab2" aria-controls="home" role="tab" data-toggle="tab">
+                        <span class="left-img11" >
+                            <span class="newfont">  Android  </span></span>
+                        <sapn class="caret pull-right arrows" ></sapn>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#tab3" aria-controls="home" role="tab" data-toggle="tab">
+                        <span class="left-img2" >
+                            <span class="newfont">  iPad  </span></span>
+                    <sapn class="caret pull-right arrows" ></sapn>
+                </a>
+                </li>
+                <li role="presentation">
+                    <a href="#tab4" aria-controls="home" role="tab" data-toggle="tab">
+                        <span class="left-img3" >
+                            <span class="newfont">  PC  </span></span>
+                        <sapn class="caret pull-right arrows" ></sapn>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#tab5" aria-controls="home" role="tab" data-toggle="tab">
+                        <span class="left-img4" >
+                            <span class="newfont">  TV  </span></span>
+                        <sapn class="caret pull-right arrows" ></sapn>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+<!--图片组-->
+        <div class="tab-content vertical-tab-content col-xs-10 " >
+            <div role="tabpanel" class="tab-pane active tabwidth" id="tab1">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 pic">
+                        <div class="thumbnail">
+                            <div class="caption topchange">
+                                <a href="#" >  德州扑克  </a>
+                                <p class="itemtip text-uppercase">Texas Hold’em poker<span class="caret"></span></p>
+                            </div>
+                            <img src="../img/game/p1.jpg" alt="..." >
+                            <div class="caption1">
+                                <div class="caption1-left pull-left text-center">
+                                  <span class="left-img1 " ></span>
+                                  <span class="left-font hidden-xs" ><a href="#">App Store</a> </span>
+
+                                </div>
+                                <span class="vertical"></span>
+                                <div class="caption1-right pull-right  text-center dropup hidden-xs">
+                                    <span class="right-img dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                    <span class="right-font " ><a href="#">二维码下载</a></span>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <div class="right-imgda"><img src="../img/game/dzht60116.png"> </div>
+                                    </div>
+                                </div>
+
+                                <div class="caption1-right pull-right  text-center dropup visible-xs">
+                                    <a href="#" style="color:#38b774;padding-top:6%;display: block;">下载</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+<!--two-->
+                    <div class="col-sm-6 col-md-4 pic">
+                        <div class="thumbnail">
+                            <div class="caption topchange">
+                                <a href="#" > 斗地主 </a>
+                                <p class="itemtip text-uppercase">landlords<span class="caret"></span></p>
+                            </div>
+                            <img src="../img/game/gamepic3.jpg" alt="..." >
+                            <div class="caption1">
+                                <div class="caption1-left pull-left text-center">
+                                    <span class="left-img1 " ></span>
+                                    <span class="left-font hidden-xs" ><a href="#">App Store</a> </span>
+
+                                </div>
+                                <span class="vertical"></span>
+                                <div class="caption1-right pull-right  text-center dropup hidden-xs">
+                                    <span class="right-img dropdown-toggle" id="dropdownMenu11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                    <span class="right-font " ><a href="#">二维码下载</a></span>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <div class="right-imgda"><img src="../img/game/landlords116.png"> </div>
+                                    </div>
+                                </div>
+
+                                <div class="caption1-right pull-right  text-center dropup visible-xs">
+                                    <a href="#" style="color:#38b774;padding-top:6%;display: block;">下载</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!--three-->
+                    <div class="col-sm-6 col-md-4 pic">
+                        <div class="thumbnail">
+                            <div class="caption topchange">
+                                <a href="#" > 麻将全集 </a>
+                                <p class="itemtip text-uppercase">mahjong games<span class="caret"></span></p>
+                            </div>
+                            <img src="../img/game/gamepic15.jpg" alt="..." >
+                            <div class="caption1">
+                                <div class="caption1-left pull-left text-center">
+                                    <span class="left-img1 " ></span>
+                                    <span class="left-font hidden-xs" ><a href="#">App Store</a> </span>
+
+                                </div>
+                                <span class="vertical"></span>
+                                <div class="caption1-right pull-right  text-center dropup hidden-xs">
+                                    <span class="right-img dropdown-toggle" id="dropdownMenu12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                    <span class="right-font " ><a href="#">二维码下载</a></span>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <div class="right-imgda"><img src="../img/game/landlords116.png"> </div>
+                                    </div>
+                                </div>
+
+                                <div class="caption1-right pull-right  text-center dropup visible-xs">
+                                    <a href="#" style="color:#38b774;padding-top:6%;display: block;">下载</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--four-->
+                    <div class="col-sm-6 col-md-4 pic">
+                        <div class="thumbnail">
+                            <div class="caption topchange">
+                                <a href="#" > 四川麻将 </a>
+                                <p class="itemtip text-uppercase">sichuan mahjong<span class="caret"></span></p>
+                            </div>
+                            <img src="../img/game/gamepic2.jpg" alt="..." >
+                            <div class="caption1">
+                                <div class="caption1-left pull-left text-center">
+                                    <span class="left-img1 " ></span>
+                                    <span class="left-font hidden-xs" ><a href="#">App Store</a> </span>
+
+                                </div>
+                                <span class="vertical"></span>
+                                <div class="caption1-right pull-right  text-center dropup hidden-xs">
+                                    <span class="right-img dropdown-toggle" id="dropdownMenu13" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                    <span class="right-font " ><a href="#">二维码下载</a></span>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <div class="right-imgda"><img src="../img/game/landlords116.png"> </div>
+                                    </div>
+                                </div>
+
+                                <div class="caption1-right pull-right  text-center dropup visible-xs">
+                                    <a href="#" style="color:#38b774;padding-top:6%;display: block;">下载</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--five-->
+                    <div class="col-sm-6 col-md-4 pic">
+                        <div class="thumbnail">
+                            <div class="caption topchange">
+                                <a href="#" > 二人麻将 </a>
+                                <p class="itemtip text-uppercase">TWO PLAYER MAHJONG<span class="caret"></span></p>
+                            </div>
+                            <img src="../img/game/gamepic12.jpg" alt="..." >
+                            <div class="caption1">
+                                <div class="caption1-left pull-left text-center">
+                                    <span class="left-img1 " ></span>
+                                    <span class="left-font hidden-xs" ><a href="#">App Store</a> </span>
+
+                                </div>
+                                <span class="vertical"></span>
+                                <div class="caption1-right pull-right  text-center dropup hidden-xs">
+                                    <span class="right-img dropdown-toggle" id="dropdownMenu14" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                    <span class="right-font " ><a href="#">二维码下载</a></span>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <div class="right-imgda"><img src="../img/game/landlords116.png"> </div>
+                                    </div>
+                                </div>
+
+                                <div class="caption1-right pull-right  text-center dropup visible-xs">
+                                    <a href="#" style="color:#38b774;padding-top:6%;display: block;">下载</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--six-->
+                    <div class="col-sm-6 col-md-4 pic">
+                        <div class="thumbnail">
+                            <div class="caption topchange">
+                                <a href="#" > 四人斗地主 </a>
+                                <p class="itemtip text-uppercase">FOUR LANDLORDS<span class="caret"></span></p>
+                            </div>
+                            <img src="../img/game/gamepic6.jpg" alt="..." >
+                            <div class="caption1">
+                                <div class="caption1-left pull-left text-center">
+                                    <span class="left-img1 " ></span>
+                                    <span class="left-font hidden-xs" ><a href="#">App Store</a> </span>
+
+                                </div>
+                                <span class="vertical"></span>
+                                <div class="caption1-right pull-right  text-center dropup hidden-xs">
+                                    <span class="right-img dropdown-toggle" id="dropdownMenu15" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                    <span class="right-font " ><a href="#">二维码下载</a></span>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <div class="right-imgda"><img src="../img/game/landlords116.png"> </div>
+                                    </div>
+                                </div>
+
+                                <div class="caption1-right pull-right  text-center dropup visible-xs">
+                                    <a href="#" style="color:#38b774;padding-top:6%;display: block;">下载</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--seven-->
+                    <div class="col-sm-6 col-md-4 pic">
+                        <div class="thumbnail">
+                            <div class="caption topchange">
+                                <a href="#" > 中国象棋 </a>
+                                <p class="itemtip text-uppercase">chinese chess of boyaa<span class="caret"></span></p>
+                            </div>
+                            <img src="../img/game/gamepic10.jpg" alt="..." >
+                            <div class="caption1">
+                                <div class="caption1-left pull-left text-center">
+                                    <span class="left-img1 " ></span>
+                                    <span class="left-font hidden-xs" ><a href="#">App Store</a> </span>
+
+                                </div>
+                                <span class="vertical"></span>
+                                <div class="caption1-right pull-right  text-center dropup hidden-xs">
+                                    <span class="right-img dropdown-toggle" id="dropdownMenu16" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                    <span class="right-font " ><a href="#">二维码下载</a></span>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <div class="right-imgda"><img src="../img/game/landlords116.png"> </div>
+                                    </div>
+                                </div>
+
+                                <div class="caption1-right pull-right  text-center dropup visible-xs">
+                                    <a href="#" style="color:#38b774;padding-top:6%;display: block;">下载</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--eight-->
+                    <div class="col-sm-6 col-md-4 pic">
+                        <div class="thumbnail">
+                            <div class="caption topchange">
+                                <a href="#" > 卡五星麻将 </a>
+                                <p class="itemtip text-uppercase">Five star mahjong of boyaa<span class="caret"></span></p>
+                            </div>
+                            <img src="../img/game/gamepic23.jpg" alt="..." >
+                            <div class="caption1">
+                                <div class="caption1-left pull-left text-center">
+                                    <span class="left-img1 " ></span>
+                                    <span class="left-font hidden-xs" ><a href="#">App Store</a> </span>
+
+                                </div>
+                                <span class="vertical"></span>
+                                <div class="caption1-right pull-right  text-center dropup hidden-xs">
+                                    <span class="right-img dropdown-toggle" id="dropdownMenu17" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                    <span class="right-font " ><a href="#">二维码下载</a></span>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <div class="right-imgda"><img src="../img/game/landlords116.png"></div>
+                                    </div>
+                                </div>
+
+                                <div class="caption1-right pull-right  text-center dropup visible-xs">
+                                    <a href="#" style="color:#38b774;padding-top:6%;display: block;">下载</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div role="tabpanel" class="tab-pane tabwidth" id="tab2">
+                <div class="row">
+                <div class="col-sm-6 col-md-4 pic">
+                    <div class="thumbnail">
+                        <div class="caption topchange">
+                            <a href="#" >  德州扑克  </a>
+                            <p class="itemtip text-uppercase">Texas Hold’em poker<span class="caret"></span></p>
+                        </div>
+                        <img src="../img/game/p1.jpg" alt="..." >
+                        <div class="caption1">
+                            <div class="caption1-left pull-left text-center">
+                                <span class="left-img21 " ></span>
+                                <span class="left-font1 hidden-xs" ><a href="#">下载游戏</a> </span>
+
+                            </div>
+                            <span class="vertical"></span>
+                            <div class="caption1-right pull-right  text-center dropup hidden-xs">
+                                <span class="right-img dropdown-toggle" id="dropdownMenu20" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                <span class="right-font " ><a href="#">二维码下载</a></span>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <div class="right-imgda"><img src="../img/game/dzht60116.png"> </div>
+                                </div>
+                            </div>
+
+                            <div class="caption1-right pull-right  text-center dropup visible-xs">
+                                <a href="#" style="color:#38b774;padding-top:6%;display: block;">下载</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--two-->
+                <div class="col-sm-6 col-md-4 pic">
+                    <div class="thumbnail">
+                        <div class="caption topchange">
+                            <a href="#" > 斗地主 </a>
+                            <p class="itemtip text-uppercase">landlords<span class="caret"></span></p>
+                        </div>
+                        <img src="../img/game/gamepic3.jpg" alt="..." >
+                        <div class="caption1">
+                            <div class="caption1-left pull-left text-center">
+                                <span class="left-img21 " ></span>
+                                <span class="left-font1 hidden-xs" ><a href="#">下载游戏</a> </span>
+
+                            </div>
+                            <span class="vertical"></span>
+                            <div class="caption1-right pull-right  text-center dropup hidden-xs">
+                                <span class="right-img dropdown-toggle" id="dropdownMenu21" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                <span class="right-font " ><a href="#">二维码下载</a></span>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <div class="right-imgda"><img src="../img/game/landlords116.png"> </div>
+                                </div>
+                            </div>
+
+                            <div class="caption1-right pull-right  text-center dropup visible-xs">
+                                <a href="#" style="color:#38b774;padding-top:6%;display: block;">下载</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--six转three-->
+                <div class="col-sm-6 col-md-4 pic">
+                    <div class="thumbnail">
+                        <div class="caption topchange">
+                            <a href="#" >  博雅十三张  </a>
+                            <p class="itemtip text-uppercase">Chinese Poker Of Boyaa<span class="caret"></span></p>
+                        </div>
+                        <img src="../img/game/22.jpg" alt="..." >
+                        <div class="caption1">
+                            <div class="caption1-left pull-left text-center">
+                                <span class="left-img21  " ></span>
+                                <span class="left-font1 hidden-xs" ><a href="#">下载游戏</a> </span>
+
+                            </div>
+                            <span class="vertical"></span>
+                            <div class="caption1-right pull-right  text-center dropup hidden-xs">
+                                <span class="right-img dropdown-toggle" id="dropdownMenu25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                <span class="right-font " ><a href="#">二维码下载</a></span>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <div class="right-imgda"><img src="../img/game/landlords116.png"> </div>
+                                </div>
+                            </div>
+
+                            <div class="caption1-right pull-right  text-center dropup visible-xs">
+                                <a href="#" style="color:#38b774;padding-top:6%;display: block;">下载</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--three-->
+                <div class="col-sm-6 col-md-4 pic">
+                    <div class="thumbnail">
+                        <div class="caption topchange">
+                            <a href="#" > 麻将全集 </a>
+                            <p class="itemtip text-uppercase">mahjong games<span class="caret"></span></p>
+                        </div>
+                        <img src="../img/game/gamepic15.jpg" alt="..." >
+                        <div class="caption1">
+                            <div class="caption1-left pull-left text-center">
+                                <span class="left-img21  " ></span>
+                                <span class="left-font1 hidden-xs" ><a href="#">下载游戏</a> </span>
+
+                            </div>
+                            <span class="vertical"></span>
+                            <div class="caption1-right pull-right  text-center dropup hidden-xs">
+                                <span class="right-img dropdown-toggle" id="dropdownMenu22" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                <span class="right-font " ><a href="#">二维码下载</a></span>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <div class="right-imgda"><img src="../img/game/landlords116.png"> </div>
+                                </div>
+                            </div>
+
+                            <div class="caption1-right pull-right  text-center dropup visible-xs">
+                                <a href="#" style="color:#38b774;padding-top:6%;display: block;">下载</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--eight转five-->
+                <div class="col-sm-6 col-md-4 pic">
+                    <div class="thumbnail">
+                        <div class="caption topchange">
+                            <a href="#" >  我爱斗地主  </a>
+                            <p class="itemtip text-uppercase">ILORD<span class="caret"></span></p>
+                        </div>
+                        <img src="../img/game/aidou.jpg" alt="..." >
+                        <div class="caption1">
+                            <div class="caption1-left pull-left text-center">
+                                <span class="left-img21  " ></span>
+                                <span class="left-font1 hidden-xs" ><a href="#">下载游戏</a> </span>
+
+                            </div>
+                            <span class="vertical"></span>
+                            <div class="caption1-right pull-right  text-center dropup hidden-xs">
+                                <span class="right-img dropdown-toggle" id="dropdownMenu27" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                <span class="right-font " ><a href="#">二维码下载</a></span>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <div class="right-imgda"><img src="../img/game/landlords116.png"></div>
+                                </div>
+                            </div>
+
+                            <div class="caption1-right pull-right  text-center dropup visible-xs">
+                                <a href="#" style="color:#38b774;padding-top:6%;display: block;">下载</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--four-->
+                <div class="col-sm-6 col-md-4 pic">
+                    <div class="thumbnail">
+                        <div class="caption topchange">
+                            <a href="#" > 四川麻将 </a>
+                            <p class="itemtip text-uppercase">sichuan mahjong<span class="caret"></span></p>
+                        </div>
+                        <img src="../img/game/gamepic2.jpg" alt="..." >
+                        <div class="caption1">
+                            <div class="caption1-left pull-left text-center">
+                                <span class="left-img21  " ></span>
+                                <span class="left-font1 hidden-xs" ><a href="#">下载游戏</a> </span>
+
+                            </div>
+                            <span class="vertical"></span>
+                            <div class="caption1-right pull-right  text-center dropup hidden-xs">
+                                <span class="right-img dropdown-toggle" id="dropdownMenu23" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                <span class="right-font " ><a href="#">二维码下载</a></span>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <div class="right-imgda"><img src="../img/game/landlords116.png"> </div>
+                                </div>
+                            </div>
+
+                            <div class="caption1-right pull-right  text-center dropup visible-xs">
+                                <a href="#" style="color:#38b774;padding-top:6%;display: block;">下载</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--five-->
+                <div class="col-sm-6 col-md-4 pic">
+                    <div class="thumbnail">
+                        <div class="caption topchange">
+                            <a href="#" > 二人麻将 </a>
+                            <p class="itemtip text-uppercase">TWO PLAYER MAHJONG<span class="caret"></span></p>
+                        </div>
+                        <img src="../img/game/gamepic12.jpg" alt="..." >
+                        <div class="caption1">
+                            <div class="caption1-left pull-left text-center">
+                                <span class="left-img21  " ></span>
+                                <span class="left-font1 hidden-xs" ><a href="#">下载游戏</a> </span>
+
+                            </div>
+                            <span class="vertical"></span>
+                            <div class="caption1-right pull-right  text-center dropup hidden-xs">
+                                <span class="right-img dropdown-toggle" id="dropdownMenu24" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                <span class="right-font " ><a href="#">二维码下载</a></span>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <div class="right-imgda"><img src="../img/game/landlords116.png"> </div>
+                                </div>
+                            </div>
+
+                            <div class="caption1-right pull-right  text-center dropup visible-xs">
+                                <a href="#" style="color:#38b774;padding-top:6%;display: block;">下载</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--seven-->
+                <div class="col-sm-6 col-md-4 pic">
+                    <div class="thumbnail">
+                        <div class="caption topchange">
+                            <a href="#" > 中国象棋 </a>
+                            <p class="itemtip text-uppercase">chinese chess of boyaa<span class="caret"></span></p>
+                        </div>
+                        <img src="../img/game/gamepic10.jpg" alt="..." >
+                        <div class="caption1">
+                            <div class="caption1-left pull-left text-center">
+                                <span class="left-img21  " ></span>
+                                <span class="left-font1 hidden-xs" ><a href="#">下载游戏</a> </span>
+
+                            </div>
+                            <span class="vertical"></span>
+                            <div class="caption1-right pull-right  text-center dropup hidden-xs">
+                                <span class="right-img dropdown-toggle" id="dropdownMenu26" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                <span class="right-font " ><a href="#">二维码下载</a></span>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <div class="right-imgda"><img src="../img/game/landlords116.png"> </div>
+                                </div>
+                            </div>
+
+                            <div class="caption1-right pull-right  text-center dropup visible-xs">
+                                <a href="#" style="color:#38b774;padding-top:6%;display: block;">下载</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+                <div class="button"><a href="#" class="btn btn-success">点击加载更多</a> </div>
+            </div>
+            <div role="tabpanel" class="tab-pane tabwidth" id="tab3">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 pic">
+                        <div class="thumbnail">
+                            <div class="caption topchange">
+                                <a href="#" >  德州扑克  </a>
+                                <p class="itemtip text-uppercase">Texas Hold’em poker<span class="caret"></span></p>
+                            </div>
+                            <img src="../img/game/p1.jpg" alt="..." >
+                            <div class="caption1">
+                                <div class="caption1-left pull-left text-center">
+                                    <span class="left-img1 " ></span>
+                                    <span class="left-font hidden-xs" ><a href="#">App Store</a> </span>
+
+                                </div>
+                                <span class="vertical"></span>
+                                <div class="caption1-right pull-right  text-center dropup hidden-xs">
+                                    <span class="right-img dropdown-toggle" id="dropdownMenu30" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                    <span class="right-font " ><a href="#">二维码下载</a></span>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <div class="right-imgda"><img src="../img/game/dzht60116.png"> </div>
+                                    </div>
+                                </div>
+
+                                <div class="caption1-right pull-right  text-center dropup visible-xs">
+                                    <a href="#" style="color:#38b774;padding-top:6%;display: block;">下载</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--two-->
+                    <div class="col-sm-6 col-md-4 pic">
+                        <div class="thumbnail">
+                            <div class="caption topchange">
+                                <a href="#" > 斗地主 </a>
+                                <p class="itemtip text-uppercase">landlords<span class="caret"></span></p>
+                            </div>
+                            <img src="../img/game/gamepic3.jpg" alt="..." >
+                            <div class="caption1">
+                                <div class="caption1-left pull-left text-center">
+                                    <span class="left-img1 " ></span>
+                                    <span class="left-font hidden-xs" ><a href="#">App Store</a> </span>
+
+                                </div>
+                                <span class="vertical"></span>
+                                <div class="caption1-right pull-right  text-center dropup hidden-xs">
+                                    <span class="right-img dropdown-toggle" id="dropdownMenu31" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                    <span class="right-font " ><a href="#">二维码下载</a></span>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <div class="right-imgda"><img src="../img/game/landlords116.png"> </div>
+                                    </div>
+                                </div>
+
+                                <div class="caption1-right pull-right  text-center dropup visible-xs">
+                                    <a href="#" style="color:#38b774;padding-top:6%;display: block;">下载</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--four-->
+                    <div class="col-sm-6 col-md-4 pic">
+                        <div class="thumbnail">
+                            <div class="caption topchange">
+                                <a href="#" > 四川麻将 </a>
+                                <p class="itemtip text-uppercase">sichuan mahjong<span class="caret"></span></p>
+                            </div>
+                            <img src="../img/game/gamepic2.jpg" alt="..." >
+                            <div class="caption1">
+                                <div class="caption1-left pull-left text-center">
+                                    <span class="left-img1 " ></span>
+                                    <span class="left-font hidden-xs" ><a href="#">App Store</a> </span>
+
+                                </div>
+                                <span class="vertical"></span>
+                                <div class="caption1-right pull-right  text-center dropup hidden-xs">
+                                    <span class="right-img dropdown-toggle" id="dropdownMenu33" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                    <span class="right-font " ><a href="#">二维码下载</a></span>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <div class="right-imgda"><img src="../img/game/landlords116.png"> </div>
+                                    </div>
+                                </div>
+
+                                <div class="caption1-right pull-right  text-center dropup visible-xs">
+                                    <a href="#" style="color:#38b774;padding-top:6%;display: block;">下载</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--seven-->
+                    <div class="col-sm-6 col-md-4 pic">
+                        <div class="thumbnail">
+                            <div class="caption topchange">
+                                <a href="#" > 中国象棋 </a>
+                                <p class="itemtip text-uppercase">chinese chess of boyaa<span class="caret"></span></p>
+                            </div>
+                            <img src="../img/game/gamepic10.jpg" alt="..." >
+                            <div class="caption1">
+                                <div class="caption1-left pull-left text-center">
+                                    <span class="left-img1 " ></span>
+                                    <span class="left-font hidden-xs" ><a href="#">App Store</a> </span>
+
+                                </div>
+                                <span class="vertical"></span>
+                                <div class="caption1-right pull-right  text-center dropup hidden-xs">
+                                    <span class="right-img dropdown-toggle" id="dropdownMenu36" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                    <span class="right-font " ><a href="#">二维码下载</a></span>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <div class="right-imgda"><img src="../img/game/landlords116.png"> </div>
+                                    </div>
+                                </div>
+
+                                <div class="caption1-right pull-right  text-center dropup visible-xs">
+                                    <a href="#" style="color:#38b774;padding-top:6%;display: block;">下载</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+            </div>
+            <div role="tabpanel" class="tab-pane tabwidth" id="tab4">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 pic">
+                        <div class="thumbnail">
+                            <div class="caption topchange">
+                                <a href="#" >  德州扑克  </a>
+                                <p class="itemtip text-uppercase">Texas Hold’em poker<span class="caret"></span></p>
+                            </div>
+                            <img src="../img/game/p1.jpg" alt="..." >
+                            <div class="caption1 interimg">
+                                <div>
+                                    <span>在线游戏：</span>
+                                    <a href="#" class="interimg1"></a>
+                                    <a href="#" class="interimg2"></a>
+                                    <a href="#" class="interimg3"></a>
+                                    <a href="#" class="interimg4"></a>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--two-->
+                    <div class="col-sm-6 col-md-4 pic">
+                        <div class="thumbnail">
+                            <div class="caption topchange">
+                                <a href="#" > 斗地主 </a>
+                                <p class="itemtip text-uppercase">landlords<span class="caret"></span></p>
+                            </div>
+                            <img src="../img/game/gamepic3.jpg" alt="..." >
+                            <div class="caption1 interimg">
+                                <div>
+                                    <span>在线游戏：</span>
+                                    <a href="#" class="interimg1"></a>
+                                    <a href="#" class="interimg4"></a>
+                                    <a href="#" class="interimg3"></a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--four-->
+                    <div class="col-sm-6 col-md-4 pic">
+                        <div class="thumbnail">
+                            <div class="caption topchange">
+                                <a href="#" > 四川麻将 </a>
+                                <p class="itemtip text-uppercase">sichuan mahjong<span class="caret"></span></p>
+                            </div>
+                            <img src="../img/game/gamepic2.jpg" alt="..." >
+                            <div class="caption1 interimg">
+                                <div>
+                                    <span>在线游戏：</span>
+
+                                    <a href="#" class="interimg2"></a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--seven-->
+                    <div class="col-sm-6 col-md-4 pic">
+                        <div class="thumbnail">
+                            <div class="caption topchange">
+                                <a href="#" > 中国象棋 </a>
+                                <p class="itemtip text-uppercase">chinese chess of boyaa<span class="caret"></span></p>
+                            </div>
+                            <img src="../img/game/gamepic10.jpg" alt="..." >
+                            <div class="caption1 interimg">
+                                <div>
+                                    <span>在线游戏：</span>
+
+                                    <a href="#" class="interimg2"></a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div role="tabpanel" class="tab-pane tabwidth" id="tab5">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 pic">
+                        <div class="thumbnail">
+                            <div class="caption topchange">
+                                <a href="#" >  德州扑克  </a>
+                                <p class="itemtip text-uppercase">Texas Hold’em poker<span class="caret"></span></p>
+                            </div>
+                            <img src="../img/game/p1.jpg" alt="..." >
+                            <div class="caption1 interimg">
+                                <div>
+                                    <span>在线游戏：</span>
+                                    <a href="#" class="interimg5"></a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--two-->
+                    <div class="col-sm-6 col-md-4 pic">
+                        <div class="thumbnail">
+                            <div class="caption topchange">
+                                <a href="#" > 斗地主 </a>
+                                <p class="itemtip text-uppercase">landlords<span class="caret"></span></p>
+                            </div>
+                            <img src="../img/game/gamepic3.jpg" alt="..." >
+                            <div class="caption1 interimg">
+                                <div>
+                                    <span>在线游戏：</span>
+                                    <a href="#" class="interimg5"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--four-->
+                    <div class="col-sm-6 col-md-4 pic">
+                        <div class="thumbnail">
+                            <div class="caption topchange">
+                                <a href="#" > 四川麻将 </a>
+                                <p class="itemtip text-uppercase">sichuan mahjong<span class="caret"></span></p>
+                            </div>
+                            <img src="../img/game/gamepic2.jpg" alt="..." >
+                            <div class="caption1 interimg">
+                                <div>
+                                    <span>在线游戏：</span>
+
+                                    <a href="#" class="interimg5"></a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--seven-->
+                    <div class="col-sm-6 col-md-4 pic">
+                        <div class="thumbnail">
+                            <div class="caption topchange">
+                                <a href="#" > 中国象棋 </a>
+                                <p class="itemtip text-uppercase">chinese chess of boyaa<span class="caret"></span></p>
+                            </div>
+                            <img src="../img/game/gamepic10.jpg" alt="..." >
+                            <div class="caption1 interimg">
+                                <div>
+                                    <span>在线游戏：</span>
+
+                                    <a href="#" class="interimg5"></a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!--top-->
+<div class="scrolltop" style=""></div>
+<!--版权-->
+<div style="background-color: #191d3a;clear: both;line-height: 50px;" class="container-fluid">
+     <div class="container bottom">
+         <p>
+            <span >
+				<a href="#">网站地图</a> &nbsp;|&nbsp; <a href="#">免责声明</a> &nbsp;|&nbsp; <a href="#">监督举报</a>
+			</span>
+         </p>
+         <p >
+			Copyright © 2004 - 2019 博雅互动(Boyaa Interactive)<a  href="#">粤ICP备05062536号</a>
+		</p>
+        <p >
+			<span style="float:left;display: block">  网络文化经营许可证：粤网文[2015]1991-405号&nbsp;|&nbsp;互联网出版许可证：新出网证（粤）字062号&nbsp;|&nbsp;增值电信业务经营许可证：粤B2-20110513
+		<a  href="http://szcert.ebs.org.cn/3a08cc75-94e5-4d0c-b6ae-92a13a947618"><img border="0" width="36" height="50" style="border-width:0px;border:hidden; border:none;" alt="深圳市市场监督管理局企业主体身份公示" title="深圳市市场监督管理局企业主体身份公示" src=" ../img/govIcon.gif"></a>
+		</span>
+		</p>
+         
+     </div>
+</div >
+
+</body>
+</html>
